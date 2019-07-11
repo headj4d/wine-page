@@ -16,6 +16,9 @@
       <div class="container">
             <div class="outline"></div>
             <div class="logo">Smythe</div>
+            <!-- <div class="music">
+            <button class="music-btn" type="button" name="button"><a class="music-btn-a" href="music-page/index.html">Music Page</a></button>
+            </div> -->
             <div class="menu">
                   <ion-icon name="menu"></ion-icon>
             </div>
@@ -27,6 +30,7 @@
             </div>
             <div class="morewine">
                   <button>Open Up</button>
+                  <button class="music-btn" type="button" name="button"><a class="music-btn-a" href="music-page/index.html">Music Page</a></button>
             </div>
       </div>
       <div class="wines">
@@ -136,6 +140,13 @@
             y: 4,
             delay: 1.8
       });
+
+      TweenMax.from(".music", 0.5, {
+            opacity: 0,
+            y: 4,
+            delay: 1.8
+      });
+
 
       t1.to(".wines", 1, {
             autoAlpha: 1
